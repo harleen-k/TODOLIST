@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <style>
+        .strike span{
+            text-decoration: line-through;
+        }
+        .container{
+            width: 500px;
+            border: 1px solid black;
+            padding: 20px;
+            /* box-shadow: 5px 5px gray; */
+            background-color: azure;
+        }
+        .listitems{
+            background-color: aliceblue;
+         
+        }
+        button{
+            box-shadow: 2px 2px 2px grey;
+        }
+        button:hover{
+            box-shadow: 3px 3px 3px grey;
+        }
+        button:active{
+            box-shadow: 1px 1px 1px grey;
+        }
+        .container:hover{
+            box-shadow: 7px 7px 7px grey;
+            transition: 1s; 
+        }
+        input{
+            box-shadow: 1px 1px 1px grey;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container mt-5 align-items-center">
+        <h1 style="text-align: center">TODOLIST</h1>
+        <div class="row  justify-content-center mt-5">
+        <input type="text" class="col-4 col-sm-8 " id="input"> &nbsp
+        <button id="button" class=" col-auto btn btn-primary ">ADD</button> &nbsp
+        <button id="clrbtn" class="col-auto btn btn-primary ">CLEAR</button> &nbsp
+        </div>  
+        <div class="row  justify-content-center">
+            <ul class="col-sm-8 mx-5 my-5 list-group" id="list"></ul>
+        </div>
+    </div> 
+</body>
+</html>
